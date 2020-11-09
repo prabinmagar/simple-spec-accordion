@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: #d679f8;
+    font-family: 'Open Sans', sans-serif;
+}
+.col-left img{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.specification{
+    width: 90vw;
+    margin: 0 auto;
+}
+.col-left{
+    padding: 2rem 0;
+}
+.col-right{
+    padding: 2rem 0;
+    color: #fff;
+}
+.col-right h2{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.spec-head{
+    display: flex;
+    height: 50px;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.spec-icon{
+    width: 50px;
+    border: 3px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+}
+.spec-title{
+    border: 3px solid #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.spec-head:hover{
+    background: #fff;
+    color: #d679f8;
+}
+.spec-para{
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    height: 0;
+    transition: all 0.5s ease;
+}
+.showPara{
+    height: 58px;
+}
+
+@media screen and (min-width: 768px){
+    .col-left img{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 992px){
+    .specification{
+        width: 85vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        height: 100vh;
+    }
+    .col-right{
+        width: 90%;
+        padding: 0;
+    }
+    .col-left{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .col-right{
+        width: 75%;
+    }
+    .col-left img{
+        width: 65%;
+    }
+}
